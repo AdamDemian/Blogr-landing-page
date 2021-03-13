@@ -32,9 +32,6 @@
     &__links{
         
         
-        .dropbtn{
-            color: $white;
-        }
         .dropdown-content{
             display: none;
             position: absolute;
@@ -71,4 +68,7 @@
             font-family: inherit;
             margin: 0;
         }
+    .links{
+        margin-right: 25rem;
+    }
 }

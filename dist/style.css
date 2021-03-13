@@ -63,10 +63,6 @@ a, a:visited, a:hover {
   margin-bottom: 6px;
 }
 
-.header__links .dropbtn {
-  color: white;
-}
-
 .header__links .dropdown-content {
   display: none;
   position: absolute;
@@ -103,5 +99,9 @@ a, a:visited, a:hover {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+}
+
+.header .links {
+  margin-right: 25rem;
 }
 /*# sourceMappingURL=style.css.map */
