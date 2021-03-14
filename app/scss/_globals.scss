@@ -32,3 +32,22 @@ a, a:visited, a:hover{
         align-items: flex-start;
     }
 }
+
+//Buttons 
+
+.button, button{
+    border: none;
+}
+
+//Visibility
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none;
+    }
+}

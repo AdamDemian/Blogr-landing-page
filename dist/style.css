@@ -36,12 +36,26 @@ a, a:visited, a:hover {
   align-items: flex-start;
 }
 
+.button, button {
+  border: none;
+}
+
+.header {
+  color: rgba(255, 255, 255, 0.7);
+  background: #ff8f70;
+  background-image: url("/images/bg-pattern-intro.svg");
+  background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
+  background-size: 200%;
+  background-position-x: 146.875rem;
+  background-position-y: 97.5rem;
+}
+
 .header nav {
   padding-top: 1.8125rem;
   padding-bottom: 4.25rem;
   padding-left: 5.1875rem;
   padding-right: 5.1875rem;
-  background-color: #ff7a85;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .header__hamburger {
@@ -50,7 +64,7 @@ a, a:visited, a:hover {
 
 .header__hamburger > span {
   display: block;
-  width: 33px;
+  max-width: 33px;
   height: 2px;
   background-color: white;
 }
@@ -66,7 +80,8 @@ a, a:visited, a:hover {
 .header__links .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  margin-top: 14px;
+  background-color: white;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 3%;
@@ -76,15 +91,16 @@ a, a:visited, a:hover {
 .header__links .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 43px;
+  padding: 12px 44px;
   text-decoration: none;
   display: block;
   text-align: left;
   font-weight: 400;
+  transition: .2s;
 }
 
 .header__links .dropdown-content a:hover {
-  background-color: #ddd;
+  font-weight: 700;
 }
 
 .header__links:hover .dropdown-content {
@@ -94,14 +110,104 @@ a, a:visited, a:hover {
 .header__links, .header .dropbtn {
   font-size: 16px;
   outline: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  transition: .3s;
+}
+
+.header .dropbtn:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .header .links {
-  margin-right: 25rem;
+  flex: 2;
+  margin-left: 32px;
+}
+
+.header__register .login, .header .sign {
+  padding: 10px 22px;
+  position: relative;
+  bottom: 10px;
+}
+
+.header .login {
+  color: rgba(255, 255, 255, 0.7);
+  transition: .3s;
+}
+
+.header .login:hover {
+  color: white;
+}
+
+.header__unav h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.header__unav p {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.header__buttons_unav {
+  justify-content: center;
+}
+
+.header__buttons_unav .start, .header .learn {
+  background: none;
+  background-color: rgba(250, 250, 250, 0.3);
+  border: none;
+  border-radius: 21px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 13px 22px;
+  margin: 0 8px;
+  margin-bottom: 9rem;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.header__buttons_unav .start:hover {
+  color: white;
+}
+
+.header__buttons_unav .learn {
+  background-color: white;
+  color: #ff525d;
+}
+
+.header__buttons_unav .learn:hover {
+  color: #ff7a85;
+}
+
+.sign {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  background: none;
+  border: none;
+  border-radius: 21px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  transition: .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sign:hover {
+  color: white;
+  background-color: rgba(250, 250, 250, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
