@@ -40,13 +40,25 @@ a, a:visited, a:hover {
   border: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header {
   color: rgba(255, 255, 255, 0.7);
   background: #ff8f70;
   background-image: url("/images/bg-pattern-intro.svg");
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-size: 200%;
-  background-position-x: 146.875rem;
+  background-position-x: 156.875rem;
   background-position-y: 97.5rem;
 }
 
@@ -58,13 +70,9 @@ a, a:visited, a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.header__hamburger {
-  display: none;
-}
-
 .header__hamburger > span {
   display: block;
-  max-width: 33px;
+  width: 33px;
   height: 2px;
   background-color: white;
 }
